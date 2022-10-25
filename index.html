@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tak Toe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Taking whole page in a main div -->
+    <div class="shadow-lg mainBody container-fluid text-bg-dark">
+        <!-- Game Header -->
+        <div class="gameHeader container">
+            <div class="m-0 heading d-flex justify-content-center align-items-center">
+                <h1>TURN:</h1>
+                <h1 class="d-flex justify-content-center text-bg-info rounded" id="turn"> Player 1</12>
+            </div><hr>
+        </div>
+            <!-- Game Body -->
+            <div class="container-fluid d-flex justify-content-center">
+                <table class="table-dark table-bordered text-bg-primary w-75 text-center border-dark shadow-lg">
+                    <tr>
+                        <td id="c1" onclick="mainFunc('c1');"></td>
+                        <td id="c2" onclick="mainFunc('c2');"></td>
+                        <td id="c3" onclick="mainFunc('c3');"></td>
+                    </tr>
+                    <tr>
+                        <td id="c4" onclick="mainFunc('c4');"></td>
+                        <td id="c5" onclick="mainFunc('c5');"></td>
+                        <td id="c6" onclick="mainFunc('c6');"></td>
+                    </tr>
+                    <tr>
+                        <td id="c7" onclick="mainFunc('c7');"></td>
+                        <td id="c8" onclick="mainFunc('c8');"></td>
+                        <td id="c9" onclick="mainFunc('c9')"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-2 d-flex justify-content-center container-fluid">
+                <button class="mx-5 btn btn-success" onclick="playAgain();">Play Again</button>
+                <button class="mx-5 btn btn-primary" onclick="location.reload();">Reset Game</button>
+            </div>
+            <!-- Result -->
+            <div class="mt-5 container-fluid result">
+                <div class="container d-flex justify-content-center">
+                <h1>Game Result :</h1>
+                <h1 class="rounded text-bg-info" id="status"></h1>
+                </div>
+                <div class="container-fluid d-flex">
+                    <h1>Player 1 Score :</h1>
+                    <h1 id="p1"></h1>
+                </div>
+                <div class="d-flex container-fluid">
+                    <h1>Player 2 Score :</h1>
+                    <h1 id="p2"></h1>
+                </div>
+                <div class="d-flex container-fluid">
+                    <h1>Draw :</h1>
+                    <h1 id="d"></h1>
+                </div>
+            </div>
+        </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
