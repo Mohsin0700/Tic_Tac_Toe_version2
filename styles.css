@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-td {
+.playBtn {
     height: 14vh;
     width: 10vw;
-    font-size: 4vw;
+    font-size: 2rem !important;
 }
