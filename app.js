@@ -167,7 +167,7 @@ const playAgain = () => {
         allC[i].classList.replace('btn-danger', 'btn-info');
     }
     for (let i = 0; i < allC.length; i++) {
-        allC[i].classList.removeAttribute('disabled');
+        allC[i].removeAttribute('disabled');
     }
 
 }
