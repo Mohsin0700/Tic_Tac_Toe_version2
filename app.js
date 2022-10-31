@@ -154,44 +154,20 @@ const mainFunc = (x) => {
 }
 
 const playAgain = () => {
-    c1.innerHTML = '';
-    c2.innerHTML = '';
-    c3.innerHTML = '';
-    c4.innerHTML = '';
-    c5.innerHTML = '';
-    c6.innerHTML = '';
-    c7.innerHTML = '';
-    c8.innerHTML = '';
-    c9.innerHTML = '';
+    for (let i = 0; i < allC.length; i++) {
+        allC[i].innerHTML = '';
+    }
     turn = 1;
     myStatus.innerHTML = '';
-    c1.classList.replace('btn-success', 'btn-info');
-    c2.classList.replace('btn-success', 'btn-info');
-    c3.classList.replace('btn-success', 'btn-info');
-    c4.classList.replace('btn-success', 'btn-info');
-    c5.classList.replace('btn-success', 'btn-info');
-    c6.classList.replace('btn-success', 'btn-info');
-    c7.classList.replace('btn-success', 'btn-info');
-    c8.classList.replace('btn-success', 'btn-info');
-    c9.classList.replace('btn-success', 'btn-info');
-    
-    c1.classList.replace('btndanger', 'btn-info');
-    c2.classList.replace('btn-danger', 'btn-info');
-    c3.classList.replace('btn-danger', 'btn-info');
-    c4.classList.replace('btn-danger', 'btn-info');
-    c5.classList.replace('btn-danger', 'btn-info');
-    c6.classList.replace('btn-danger', 'btn-info');
-    c7.classList.replace('btn-danger', 'btn-info');
-    c8.classList.replace('btn-danger', 'btn-info');
-    c9.classList.replace('btn-danger', 'btn-info');
+    for (let i = 0; i < allC.length; i++) {
+        allC[i].classList.replace('btn-success', 'btn-info');
+    }
 
-    c1.removeAttribute('disabled');
-    c2.removeAttribute('disabled');
-    c3.removeAttribute('disabled');
-    c4.removeAttribute('disabled');
-    c5.removeAttribute('disabled');
-    c6.removeAttribute('disabled');
-    c7.removeAttribute('disabled');
-    c8.removeAttribute('disabled');
-    c9.removeAttribute('disabled');
+    for (let i = 0; i < allC.length; i++) {
+        allC[i].classList.replace('btn-danger', 'btn-info');
+    }
+    for (let i = 0; i < allC.length; i++) {
+        allC[i].classList.removeAttribute('disabled');
+    }
+
 }
