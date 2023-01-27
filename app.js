@@ -154,20 +154,26 @@ const mainFunc = (x) => {
 }
 
 const playAgain = () => {
-    for (let i = 0; i < allC.length; i++) {
-        allC[i].innerHTML = '';
-    }
     turn = 1;
     myStatus.innerHTML = '';
     for (let i = 0; i < allC.length; i++) {
+        allC[i].innerHTML = '';
         allC[i].classList.replace('btn-success', 'btn-info');
-    }
-
-    for (let i = 0; i < allC.length; i++) {
         allC[i].classList.replace('btn-danger', 'btn-info');
-    }
-    for (let i = 0; i < allC.length; i++) {
         allC[i].removeAttribute('disabled');
     }
+}
 
+const reset = () => {
+    turn = 1;
+    myStatus.innerHTML = '';
+    p1Score.innerHTML = '';
+    p2Score.innerHTML = '';
+    draw.innerHTML = '';
+    for (let i=0; i< allC.length; i++) {
+        allC[i].classList.replace('btn-success', 'btn-info');
+        allC[i].classList.replace('btn-danger', 'btn-info');
+        allC[i].innerHTML = '';
+        allC[i].removeAttribute('disabled');
+    }
 }

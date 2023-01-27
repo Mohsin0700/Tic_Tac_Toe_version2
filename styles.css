@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-.playBtn {
-    height: 14vh;
-    width: 10vw;
-    font-size: 2rem !important;
+.btn {
+    width: 20vw;
+    height: 12vh;
 }
